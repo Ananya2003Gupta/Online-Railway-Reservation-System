@@ -11,4 +11,5 @@ def table():
 hostname=input("Enter the host type:")
 username=input("Enter the username:")
 pswd=input("Enter the password:")
+databasename=input("Enter the name of database:")
 table()
