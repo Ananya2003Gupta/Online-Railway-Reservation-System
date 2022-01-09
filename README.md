@@ -20,9 +20,13 @@ in command prompt.
 Files Description:
 1. Database Creation.py
 This python file contains the program to create the database.The user defined function database() contains the code to create the database in mysql.User will be asked to enter the host type, user name and password which he/she has setup for mysql.
+This file needs to be executed just once to create the database.
+
 
 2. Table Creation.py
-This python file contains the program to create the tables that will be required in the main program. Remember to create the database by executing the Database Creation.py file before executing this file. Table Creation.py contains the user defined function table that contains the code to create two tables railway and useraccount that will be used in the main program to store user's data.User will be asked to enter the host type, user name, password and database name (name of the database he/she created using Database Creation.py).
+This python file contains the program to create the tables that will be required in the main program. Remember to create the database by executing the Database Creation.py file before executing this file. Table Creation.py contains the user defined function table that contains the code to create two tables railway and useraccount that will be used in the main program to store user's data.User will be asked to enter the host type, user name, password and database name (name of the database he/she created using Database Creation.py). 
+This file also needs to be executed just once to create tables after executing the Database Creation.py .
+
 
 3. Online Railway Reservation Program.py
 This python file is the main program that will perform the functions like sign in , sign up, delete account, user details, train ticket booking, train ticket checking and train ticket cancelling.Remember to execute the Table Creation.py to create the tables which will be used in this python file before executing it.
