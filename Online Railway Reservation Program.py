@@ -1,9 +1,13 @@
 #This is the main program that will perform all the functions.
-def connectivity(hostname, username, pswd, databasename):
-    import mysql.connector
-    mycon=mysql.connector.connect (host=hostname,user=username, passwd=pswd,database=databasename)
-    cursor=mycon.cursor()
-    mycon.autocommit=True
+
+hostname=input("Enter the host type:")
+username=input("Enter the username:")
+pswd=input("Enter the password:")
+databasename=input("Enter the name of database:")
+import mysql.connector
+mycon=mysql.connector.connect (host=hostname,user=username, passwd=pswd,database=databasename)
+cursor=mycon.cursor()
+mycon.autocommit=True
 
 def menu():
     print("1.YES")
@@ -303,12 +307,7 @@ def account_details():
             return False
     except:
         print("ACCOUNT DOES NOT EXIST")
-        
-hostname=input("Enter the host type:")
-username=input("Enter the username:")
-pswd=input("Enter the password:")
-databasename=input("Enter the name of database:")
-connectivity(hostname, username, pswd, databasename)       
+              
 menu()
 
 
