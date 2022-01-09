@@ -121,7 +121,7 @@ def ticket_checking():
     if ch==1:
         usn=input("Enter your username:")
         pswd=input("Enter your password:")
-        phno1=input('Enter your phone number:")
+        phno1=input("Enter your phone number:")
         try:
             s1="select * from railway where username='{}' and password='{}' and phno='{}'".format(usn,pswd,phno1)
             cursor.execute(s1)
