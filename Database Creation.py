@@ -4,7 +4,7 @@ def database(hostname,username,pswd,databse):
     import mysql.connector as sql
     conn=sql.connect(host=hostname,user=username,passwd=pswd)
     mycursor=conn.cursor()
-    s="create database '{}'".format(databse)
+    s="create database {}".format(databse)
     mycursor.execute(s)
 hostname=input("Enter the host type:")
 username=input("Enter the username:")
