@@ -12,8 +12,10 @@ Software Requirements:
 
 Connect mysql with python before running this program.
 Check by executing the command -( import mysql.connector ) in python IDLE.
-If the command gives error, you will have to connect mysql with python.
-Otherwise you are good to go.
+If the command gives error, you will have to connect mysql with python.Otherwise you are good to go.
+To connect mysql with python, type 
+pip install mysql-connector-python 
+in command prompt.
 
 Files Description:
 1. Database Creation.py
