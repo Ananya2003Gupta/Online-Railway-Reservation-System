@@ -1,5 +1,5 @@
 #this program creates the required tables that will be used in the main program for data storage in the database created using database creation file.
-def table():
+def table(hostname, username, pswd, databasename):
     import mysql.connector as sql
     mycon=sql.connect(host=hostname,user=username,passwd=pswd,database=databasename)
     cursor=mycon.cursor()
@@ -12,4 +12,4 @@ hostname=input("Enter the host type:")
 username=input("Enter the username:")
 pswd=input("Enter the password:")
 databasename=input("Enter the name of database:")
-table()
+table(hostname, username, pswd, databasename)
